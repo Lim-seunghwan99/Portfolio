@@ -1,25 +1,26 @@
-// export default function Home() {
-//   return (
-//     <div className="flex flex-col items-center justify-center bg-blue-900 text-white w-full max-w-4xl h-full p-6 rounded-lg shadow-xl">
-//       <h1 className="text-4xl font-bold mb-4 text-center">Cloud & Infrastructure Specialist</h1>
-//       <p className="text-xl text-center text-gray-300 mb-6">Designing and implementing cloud solutions for scalable infrastructure.</p>
-//       <div className="flex justify-center gap-6">
-//         <a href="#projects" className="text-lg font-semibold text-cyan-400 hover:underline">See My Work</a>
-//         <a href="#skills" className="text-lg font-semibold text-cyan-400 hover:underline">Cloud Expertise</a>
-//       </div>
-//     </div>
-//   );
-// }
+// src/pages/Home.js
 import React from 'react';
 
 function Home() {
   return (
-    <section id="home" className="h-screen flex items-center justify-center text-center bg-blue-500 text-white">
-      <h1 className="text-5xl font-bold">Welcome to My Portfolio</h1>
-      <p className="mt-4">Showcasing My Skills and Projects</p>
+    // pt-16 클래스 추가 (네비게이션 바 높이만큼)
+    <section id="home" className="min-h-screen flex flex-col justify-center items-center text-center pt-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-100 relative"> {/* relative 추가 for absolute positioning of arrow */}
+      <div data-aos="fade-up">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4">
+          Hello, I'm [Your Name]
+        </h1>
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">
+          I'm a [Your Role] passionate about creating interactive and user-friendly web experiences.
+        </p>
+      </div>
+      {/* Scroll down hint */}
+       <div className="absolute bottom-10 animate-bounce">
+         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+         </svg>
+       </div>
     </section>
   );
 }
 
 export default Home;
-

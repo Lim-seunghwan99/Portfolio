@@ -1,4 +1,4 @@
-@import 'aos/dist/aos.css';
+/* @import 'aos/dist/aos.css';
 
 @tailwind base;
 @tailwind components;
@@ -18,4 +18,40 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+} */
+
+@import 'aos/dist/aos.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Optional: Add some base styles */
+body {
+  font-family: 'Inter', sans-serif; /* Or any preferred font */
+  @apply bg-gray-100 text-gray-800; /* Base background and text color */
+}
+
+/* Optional: Style for scrollbar (might differ based on browser) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Ensure smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
 }
