@@ -1,46 +1,27 @@
-// import React from 'react';
-
-// function Projects() {
-//   return (
-//     <section id="projects" className="h-screen flex items-center justify-center bg-white">
-//       <div className="text-center">
-//         <h2 className="text-4xl font-bold mb-4">Projects</h2>
-//         <p>Explore some of the projects I've worked on:</p>
-//         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6">
-//           <div className="bg-gray-300 p-4">Project 1</div>
-//           <div className="bg-gray-300 p-4">Project 2</div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default Projects;
-// src/pages/Projects.js
 import React from 'react';
+import postKoreaImg from "../assets/postkorea.png";
 
 // Example project data - replace with your actual projects
 const projectsData = [
   {
-    title: "Project One Title",
-    description: "A brief description of project one, highlighting key features and technologies used.",
+    title: "네발자국",
+    description: "개인 맞춤형 산책로 추천 팀 프로젝트",
     imageUrl: "https://via.placeholder.com/400x250/cccccc/888888?text=Project+Image", // Replace with actual image URL
-    liveUrl: "#", // Replace with live demo link
-    codeUrl: "#", // Replace with source code link
+    codeUrl: "https://github.com/YourFootprints/YourFootprints", // Replace with source code link
   },
   {
-    title: "Project Two Title",
-    description: "Description for the second project, mentioning its purpose and stack.",
-    imageUrl: "https://via.placeholder.com/400x250/cccccc/888888?text=Project+Image",
+    title: "POST KOREA",
+    description: "문화재 스탬프 투어 모바일 팀 프로젝트트",
+    imageUrl: postKoreaImg,
     liveUrl: "#",
-    codeUrl: "#",
+    codeUrl: "https://github.com/POSTKOREA/POSTKOREA",
   },
   {
-    title: "Project Three Title",
-    description: "This project showcases complex logic and integration with third-party APIs.",
+    title: "방송통신위원회 공모전",
+    description: "머신러닝을 이용한 동영상 카테고리 분류, 광고 선호도 예측",
     imageUrl: "https://via.placeholder.com/400x250/cccccc/888888?text=Project+Image",
-    liveUrl: "#",
-    codeUrl: "#",
+    liveUrl: "https://appxgboost-jsuhpixf4fvbxbtbdzcre9.streamlit.app/",
+    codeUrl: "https://github.com/Lim-seunghwan99/streamlit_xgboost",
   },
   // Add more projects as needed
 ];
