@@ -27,7 +27,7 @@ function Contact() {
 
           {/* Social Links (Example: GitHub) */}
           <a
-            href="https://github.com/yourusername" // Replace with your GitHub profile
+            href="https://github.com/Lim-seunghwan99" // Replace with your GitHub profile
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center text-lg text-gray-700 hover:text-black transition duration-300"

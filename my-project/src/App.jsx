@@ -37,7 +37,7 @@ function App() {
                 offset={-navHeight} // 네비게이션 높이만큼 오프셋
                 className="text-xl font-semibold cursor-pointer hover:text-blue-400 transition-colors duration-300"
               >
-                [Your Name] {/* 여기에 본인 이름 입력 */}
+                [Lim Seung Hwan] {/* 여기에 본인 이름 입력 */}
                 <span className="font-light hidden sm:inline"> | Portfolio</span> {/* 화면 작을 때 Portfolio 숨김 (선택 사항) */}
               </Link>
             </div>
