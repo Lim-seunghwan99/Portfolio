@@ -116,7 +116,7 @@ function Skills() {
           My Skills and Experience
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-12" data-aos="fade-up" data-aos-delay="100">
-          A collection of technologies and tools I work with.
+          프로젝트에 적용해 봤거나 학습 및 실습한 기술들입니다.
         </p>
 
         {/* Iterate over categories */}

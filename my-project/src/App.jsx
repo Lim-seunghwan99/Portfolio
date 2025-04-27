@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import Home from './pages/Home';
+import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
@@ -37,7 +38,7 @@ function App() {
                 offset={-navHeight} // 네비게이션 높이만큼 오프셋
                 className="text-xl font-semibold cursor-pointer hover:text-blue-400 transition-colors duration-300"
               >
-                [Lim Seung Hwan] {/* 여기에 본인 이름 입력 */}
+                [임승환] 
                 <span className="font-light hidden sm:inline"> | Portfolio</span> {/* 화면 작을 때 Portfolio 숨김 (선택 사항) */}
               </Link>
             </div>
@@ -56,6 +57,19 @@ function App() {
                     className="hover:text-blue-400 cursor-pointer transition-colors duration-300 px-2 py-2 text-sm sm:text-base" // 패딩 및 반응형 텍스트 크기
                   >
                     Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    activeClass="text-blue-500"
+                    to="about" // Target the id="about" section
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-navHeight} // Adjust offset as needed
+                    className="hover:text-blue-400 cursor-pointer transition-colors duration-300 px-2 py-2 text-sm sm:text-base"
+                  >
+                    About {/* Link Text */}
                   </Link>
                 </li>
                 <li>
@@ -110,6 +124,7 @@ function App() {
         {/* Home 컴포넌트 자체에서 pt-16을 주거나 여기서 div로 감싸서 pt-16을 줄 수 있습니다. */}
         {/* Home 컴포넌트 내부 수정이 더 깔끔합니다. Home.js의 <section>에 pt-16 클래스를 추가하세요. */}
         <Home />
+        <About/>
         <Skills />
         <Projects />
         <Contact />
@@ -117,7 +132,7 @@ function App() {
 
       {/* Optional Footer */}
       <footer className="bg-gray-800 text-white text-center p-4 mt-10">
-        © {new Date().getFullYear()} [Your Name]. All rights reserved.
+        © {new Date().getFullYear()} [Lim Seung Hwan]. All rights reserved.
       </footer>
     </div>
   );
