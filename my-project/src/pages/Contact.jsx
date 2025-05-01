@@ -11,7 +11,7 @@ function Contact() {
           Contact
         </h2>
         <p className="text-lg text-gray-600 mb-10 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-          아래로 연락 주시면 빠르게 답변 드리겠습니다.
+          아래의 연락처로 연락 주시면 감사하겠습니다.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-8" data-aos="fade-up" data-aos-delay="200">
