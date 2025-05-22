@@ -4,39 +4,39 @@ import postKoreaImg from "../assets/postkorea.png";
 import yourFootImg from "../assets/ComfyUI_00035_.png";
 import BroadCastImg from "../assets/ComfyUI_00036_.png";
 import fallDetectionImg from "../assets/ComfyUI_00038_.png";
+import ProjectDescription from "./ProjectDescription";
 
 
 const projectsData = [
   {
     title: "네발자국",
-    shortDescription: "개인 맞춤형 산책로 추천 웹 서비스",
-    detailedDescription: "사용자 선호도(근처 선호 편의시설, 별점, 거리)와 현재 위치를 기반으로 맞춤 산책로를 추천하고 경로를 안내하는 웹 서비스입니다. 카카오API와 공공데이터를 활용하여 구현했습니다.",
-    myRole: "인프라 구축(AWS, Jenkins, Nginx, Docker), 백엔드 API 일부 개발(Spring Boot, FastAPI, Hadoop의 데이터를 사용하는 API), 데이터 파이프라인 구축(Hadoop, Spark) 담당.",
+    shortDescription: "사용자 위치와 선호 정보를 기반으로 맞춤형 산책로를 추천하는 웹 서비스",
+    detailedDescription: "사용자의 현재 위치와 선호도(편의시설, 별점, 거리 등)를 분석하여 개인화된 산책로를 추천하고 경로를 안내하는 웹 서비스입니다. 카카오 지도 API와 공공데이터(Open API)를 활용해 실시간 위치 기반 정보 제공이 가능하도록 했으며, Hadoop과 Spark 기반의 데이터 파이프라인을 구축해 산책로 데이터를 정제·가공하여 추천 알고리즘에 반영했습니다. 백엔드는 Spring Boot와 FastAPI를 병행해 마이크로서비스 구조 일부를 구현했으며, Jenkins, Docker, Nginx, AWS를 활용해 CI/CD 및 배포 환경을 구성했습니다.",
+    myRole: "AWS 기반 인프라 구축 및 Jenkins, Docker, Nginx를 통한 CI/CD 파이프라인 구성, Hadoop·Spark 기반 데이터 파이프라인 설계 및 구축, Spring Boot와 FastAPI를 활용한 백엔드 API 개발",
     imageUrl: yourFootImg,
     codeUrl: "https://github.com/YourFootprints/YourFootprints",
   },
   {
     title: "실시간 낙상 인식 시스템",
-    shortDescription: "MediaPipe와 OpenCV를 활용한 실시간 낙상 인식 시스템",
-    detailedDescription: "MediaPipe와 OpenCV를 활용하여 관절 좌표를 추출하고, PyTorch 기반 LSTM 모델로 시계열 데이터를 분석하여 낙상을 분류하는 시스템입니다. 낙상 인식시 SMS를 발송해 빠른 대응을 지원하도록 했습니다.",
-    myRole: "프로젝트 전 과정",
+    shortDescription: "실시간 관절 추적 및 시계열 분석을 통해 낙상 상황을 분류하고, 즉각적인 알림 전송으로 응급 대응을 지원하는 AI 기반 안전 감지 시스템입니다.",
+    detailedDescription: "MediaPipe와 OpenCV를 활용해 관절 좌표를 실시간 추출하고, PyTorch 기반의 LSTM 모델에 시계열 형태로 입력하여 낙상 여부를 분류하는 AI 시스템입니다. 3차 스플라인 보간법을 이용해 관절 좌표의 연속성을 확보했으며, 모델은 사전 학습된 LSTM을 전이 학습 방식으로 최적화했습니다. 추론 결과는 FastAPI를 통해 API로 제공되며, React + WebSocket을 통해 프론트엔드에서 실시간 시각화됩니다. 낙상 인식 시 즉시 SMS를 전송하여 신속한 응급 대응을 가능하게 했습니다.",
+    myRole: "LSTM 모델 전이 학습 및 데이터 전처리(3차 스플라인 적용) 파이프라인 구축, FastAPI 기반 추론 서버 및 React + WebSocket을 활용한 실시간 시각화 대시보드 등 전 개발 과정",
     imageUrl: fallDetectionImg,
     codeUrl: "https://github.com/Lim-seunghwan99/mtvs-project3_fall_detection",
   },
   {
     title: "방송통신위원회 공모전",
-    shortDescription: "머신러닝 기반 동영상 분석 및 예측",
-    detailedDescription: "제출된 동영상의 카테고리를 자동으로 분류하고, 사용자 데이터를 기반으로 광고 선호도를 예측하는 머신러닝 모델을 개발했습니다. XGBoost 모델을 사용하였고, Streamlit을 이용해 결과를 시각화하는 웹 앱을 구현했습니다.",
-    myRole: "프로젝트 전 과정",
+    shortDescription: "머신러닝 기반 동영상 분류 및 사용자 선호 광고 예측 시스템 개발",
+    detailedDescription: "사용자가 제출한 동영상 콘텐츠를 자동으로 분류하고, 사용자 행동 데이터를 기반으로 광고 선호도를 예측하는 머신러닝 기반 분석 시스템을 개발했습니다. 모델은 XGBoost를 활용하여 카테고리 분류 및 예측 정확도를 최적화했으며, 결과는 Streamlit을 이용한 웹 대시보드 형태로 시각화해 사용자 편의성을 높였습니다. 데이터 전처리부터 모델 학습, 평가, 웹 앱 구현까지 전 과정을 주도적으로 수행했습니다.",
+    myRole: "데이터 전처리, XGBoost 기반 분류 및 예측 모델 개발, Streamlit 웹 구현까지 전 개발 과정",
     imageUrl: BroadCastImg,
-    liveUrl: "https://appxgboost-jsuhpixf4fvbxbtbdzcre9.streamlit.app/",
     codeUrl: "https://github.com/Lim-seunghwan99/streamlit_xgboost",
   },
   {
     title: "POST KOREA",
-    shortDescription: "문화재 스탬프 투어 모바일 앱",
-    detailedDescription: "GPS 기반으로 사용자 주변의 문화재 정보를 제공하고, 방문 시 스탬프를 발급 및 미니게임 기능을 가진 모바일 앱입니다. 문화재청 API를 활용했으며, 사용자 커뮤니티 기능도 포함되어 있습니다.",
-    myRole: "인프라 구축(AWS, Jenkins, Nginx, Docker), 백엔드 API 일부 개발(SpringBoot, 게시판 기능), 데이터베이스 설계(MariaDB/MySQL)",
+    shortDescription: "GPS 기반 문화재 스탬프 투어 및 커뮤니티 기능을 제공하는 모바일 앱",
+    detailedDescription: "사용자의 현재 위치를 기반으로 주변의 문화재 정보를 제공하고, 방문 시 스탬프를 발급해주는 위치 기반 모바일 투어 앱입니다. 문화재청 오픈 API를 통해 문화재 데이터를 실시간으로 연동하였으며, 미니게임 요소와 사용자 커뮤니티(게시판) 기능을 함께 제공하여 문화유산에 대한 흥미와 참여를 높였습니다. AWS 기반 인프라 환경에 Jenkins, Nginx, Docker를 활용한 CI/CD 및 배포 자동화 구조를 구성했으며, Spring Boot 기반 REST API와 MariaDB를 활용한 데이터베이스 설계를 맡아 서비스의 핵심 기능 개발에 기여했습니다.",
+    myRole: "AWS, Jenkins, Nginx, Docker를 활용한 인프라 및 배포 자동화 구축, Spring Boot 기반 게시판 API 개발, MariaDB 설계를 포함한 백엔드 전반 참여",
     imageUrl: postKoreaImg,
     codeUrl: "https://github.com/POSTKOREA/POSTKOREA",
   },
@@ -70,7 +70,8 @@ function Projects() {
                 <p className="text-gray-500 text-sm mb-4">{project.shortDescription}</p>
 
                 {/* 상세 설명 */}
-                <p className="text-gray-700 text-sm mb-4">{project.detailedDescription}</p>
+                {/* <p className="text-gray-700 text-sm mb-4">{project.detailedDescription}</p> */}
+                <ProjectDescription text={project.detailedDescription} />
 
                 {/* 맡은 역할 */}
                 <div className="mb-4"> {/* 역할 섹션 감싸기 */}

@@ -38,7 +38,7 @@ function App() {
                 offset={-navHeight} // 네비게이션 높이만큼 오프셋
                 className="text-xl font-semibold cursor-pointer hover:text-blue-400 transition-colors duration-300"
               >
-                [임승환] 
+                Lim Seung Hwan
                 <span className="font-light hidden sm:inline"> | Portfolio</span> {/* 화면 작을 때 Portfolio 숨김 (선택 사항) */}
               </Link>
             </div>
@@ -132,7 +132,7 @@ function App() {
 
       {/* Optional Footer */}
       <footer className="bg-gray-800 text-white text-center p-4 mt-10">
-        © {new Date().getFullYear()} [Lim Seung Hwan]. All rights reserved.
+        © {new Date().getFullYear()} Lim Seung Hwan. All rights reserved.
       </footer>
     </div>
   );

@@ -31,17 +31,20 @@ function About() {
             이 강의에서는 Python을 활용해 데이터 크롤링, 분석, 시각화를 진행했습니다.
           </p>
           <p>
-            대학 졸업 후에는 <span className="font-semibold">삼성청년소프트웨어아카데미(SSAFY)</span>에 입과해 1년 동안
-            Computer Science, Django, Vue.js, Spring Boot 등 다양한 기술을 배웠습니다.
+          대학 졸업 후에는 <span className="font-semibold">삼성청년소프트웨어아카데미(SSAFY)</span>에 입과해 1년간
+          Computer Science, Django, Vue.js, Spring Boot 등 다양한 기술을 체계적으로 학습했습니다.
+          특히 1학기에는 반 내 <span className="font-semibold">성적 우수상(3위)</span>을 수상하며 학습 역량을 인정받았습니다.
           </p>
           <p>
-            아카데미 수료 후에는 <span className="font-semibold">글루코메트릭스</span>에서 3개월간 소프트웨어 엔지니어로 근무하며
-            의료 데이터를 기반으로 한 알고리즘을 개발하고, Docker를 활용해 Linux 환경에서 테스트 자동화 시스템을 구축했습니다.
-            또한 React를 사용하여 데이터 검증용 웹 GUI 페이지를 개발했습니다.
+          아카데미 수료 후에는 <span className="font-semibold">글루코메트릭스</span>에서 3개월간 소프트웨어 엔지니어로 근무하며,  
+          의료 데이터를 기반으로 알고리즘을 개발하고, <span className="font-semibold">Docker와 Linux 환경</span>에서 테스트 자동화 시스템을 구축했습니다.  
+          또한 <span className="font-semibold">React</span>를 활용해 의료 데이터 검증을 위한 웹 기반 GUI를 직접 설계·구현했습니다.
           </p>
           <p>
-            현재는 <span className="font-semibold">메타버스 AI 과정</span>에 참여해 머신러닝, 딥러닝, 자연어 처리, 컴퓨터 비전(OpenCV, MediaPipe), LLM 등
-            다양한 분야의 최신 기술을 배우고 있습니다.
+          현재는 <span className="font-semibold">메타버스 AI 융합 과정</span>에 참여하여  
+          머신러닝과 딥러닝을 비롯해 자연어 처리(NLP), 컴퓨터 비전(OpenCV, MediaPipe),  
+          대규모 언어 모델(LLM), RAG(Retrieval-Augmented Generation), AI Agent 등  
+          다양한 최신 AI 기술을 폭넓게 학습하고 있습니다.
           </p>
 
           {/* --- Projects Sub-heading --- */}
@@ -58,9 +61,10 @@ function About() {
               [YouFoot - 개인 맞춤형 산책로 추천 서비스]
             </p>
             <p>
-              해당 프로젝트에서 저는 Nginx, Docker, Jenkins, AWS EC2, RDS를 활용한 배포,
-              Spring Boot와 FastAPI를 이용한 백엔드 API 개발,
-              Hadoop과 Spark를 활용한 데이터 파이프라인 구축을 담당했습니다.
+              사용자의 위치와 선호도를 기반으로 맞춤 산책 경로를 추천하는 웹 서비스입니다.
+              <span className="font-semibold"> AWS EC2, RDS, Nginx, Docker, Jenkins</span>를 활용해 인프라를 구축하고,  
+              <span className="font-semibold">Spring Boot, FastAPI</span>로 백엔드 API를 개발했으며,  
+              <span className="font-semibold">Hadoop과 Spark</span>를 이용해 추천 모델용 데이터 파이프라인을 구현했습니다.
             </p>
           </div>
 
@@ -70,9 +74,10 @@ function About() {
               [실시간 낙상 인식 시스템]
             </p>
             <p>
-              <span className="font-semibold">MediaPipe</span>와 <span className="font-semibold">OpenCV</span>를 활용해 관절 좌표를 추출하고,
-              <span className="font-semibold">PyTorch 기반 LSTM 모델</span>로 시계열 데이터를 분석하여 낙상을 분류했습니다.
-              데이터 전처리 및 스트리밍 최적화를 직접 구현해 실시간 대응이 가능하도록 했습니다.
+              <span className="font-semibold">MediaPipe</span>와 <span className="font-semibold">OpenCV</span>로 관절 좌표를 추출하고,  
+              <span className="font-semibold">PyTorch 기반 LSTM 모델</span>을 통해 시계열 데이터를 분석해 낙상을 분류했습니다.  
+              실시간 추론을 위해 <span className="font-semibold">WebSocket 기반 시각화 시스템</span>과  
+              <span className="font-semibold">전처리 자동화(스플라인 보간 등)</span>도 직접 구현했습니다.
             </p>
           </div>
 
@@ -82,8 +87,9 @@ function About() {
               [데이콘 암석 분류 대회]
             </p>
             <p>
-              초기 정확도 0.5614에서 <span className="font-semibold">데이터 증강, 모델 최적화, 앙상블 기법</span>을 통해
-              0.8566까지 성능을 향상시킨 경험이 있습니다.
+              <span className="font-semibold">CNN 기반 모델링, 데이터 증강, 하이퍼파라미터 튜닝</span>을 통해  
+              초기 정확도 0.5614에서 0.8592까지 성능을 향상시켰습니다.  
+              학습 데이터 분포 분석과 앙상블 기법을 활용해 모델의 일반화 성능을 높였습니다.
             </p>
           </div>
 
