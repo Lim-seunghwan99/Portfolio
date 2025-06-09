@@ -4,7 +4,9 @@ import postKoreaImg from "../assets/postkorea.png";
 import yourFootImg from "../assets/ComfyUI_00035_.png";
 import BroadCastImg from "../assets/ComfyUI_00036_.png";
 import fallDetectionImg from "../assets/ComfyUI_00038_.png";
+import WriterImg from "../assets/mtvs_project4.png";
 import ProjectDescription from "./ProjectDescription";
+
 
 
 const projectsData = [
@@ -15,6 +17,14 @@ const projectsData = [
     myRole: "AWS 기반 인프라 구축 및 Jenkins, Docker, Nginx를 통한 CI/CD 파이프라인 구성, Hadoop·Spark 기반 데이터 파이프라인 설계 및 구축, Spring Boot와 FastAPI를 활용한 백엔드 API 개발",
     imageUrl: yourFootImg,
     codeUrl: "https://github.com/YourFootprints/YourFootprints",
+  },
+  {
+    title: "Writer-s-Desk",
+    shortDescription: "작가를 위한 AI 기반 글쓰기 도우미 웹 애플리케이션",
+    detailedDescription: "작가들을 위한 단어장 서비스로, 작품 설정을 기반으로 한 에피소드 예시 생성, 유사 단어 검색 등을 LangChain 기반 AI Agent, RAG, 웹 검색(WebSearch) 기술을 활용해 구현했습니다. 프론트엔드는 Next.js와 TypeScript를 사용하였으며, 백엔드는 FastAPI를 기반으로 개발했습니다. 데이터 저장은 PostgreSQL을, 검색 기능은 OpenSearch를 활용했으며, Docker-Compose를 이용해 컨테이너화 및 배포 환경을 구성하였습니다.",
+    myRole: "FastAPI 기반의 백엔드 API 개발, PostgreSQL 데이터베이스 설계 및 구축, OpenSearch를 활용한 RAG 검색 기능 구현, LangChain 기반 AI Agent 개발, 그리고 Docker-Compose를 통한 컨테이너화 및 배포 환경 구성 등 프로젝트의 전반적인 백엔드 개발을 담당하였습니다.",
+    imageUrl: WriterImg,
+    codeUrl: "https://github.com/Lim-seunghwan99/Writer-s-Desk",
   },
   {
     title: "실시간 낙상 인식 시스템",

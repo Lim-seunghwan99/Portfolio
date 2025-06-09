@@ -1,8 +1,8 @@
 import React from 'react';
 import {
-  FaJsSquare, FaPython, FaJava, FaReact, FaVuejs, FaNodeJs, FaAws, FaWindows, FaLinux, FaApple, FaDocker, FaGitAlt, FaGithub, FaGitlab, FaJenkins, FaBrain, FaHtml5, FaCss3Alt, FaBootstrap, FaRProject 
+  FaJsSquare, FaPython, FaJava, FaReact, FaVuejs, FaNodeJs, FaAws, FaWindows, FaLinux, FaApple, FaDocker, FaGitAlt, FaGithub, FaGitlab, FaJenkins, FaBrain, FaHtml5, FaCss3Alt, FaBootstrap, FaRProject
 } from 'react-icons/fa'; 
-import { SiDjango, SiFastapi, SiSpringboot, SiMariadb, SiSqlite, SiAmazonrds , SiGooglecloud, SiKubernetes, SiGnubash, SiGithubactions, SiNginx, SiPytorch, SiScikitlearn, SiApachespark, SiPostgresql, SiOpencv  } from "react-icons/si"; // Example: Simple Icons
+import { SiDjango, SiFastapi, SiSpringboot, SiMariadb, SiSqlite, SiAmazonrds , SiGooglecloud, SiKubernetes, SiGnubash, SiGithubactions, SiNginx, SiPytorch, SiScikitlearn, SiApachespark, SiPostgresql, SiOpencv, SiLangchain, SiOpensearch   } from "react-icons/si"; // Example: Simple Icons
 import { GrHadoop, GrMysql } from "react-icons/gr";
 import { VscAzure } from "react-icons/vsc";
 import { FaStar } from "react-icons/fa";
@@ -37,6 +37,7 @@ const skillCategories = [
       { name: 'AWS RDS', icon: <SiAmazonrds className="text-orange-500" /> },
       { name: 'MySQL', icon: <GrMysql className="text-blue-600" />, isPrimary: true },
       { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-600" /> },
+      { name: 'OpenSearch', icon: <SiOpensearch className="text-blue-600" /> },
     ]
   },
   {
@@ -84,6 +85,7 @@ const skillCategories = [
       { name: 'PyTorch', icon: <SiPytorch className="text-orange-600" /> },
       { name: 'Scikit-Learn', icon: <SiScikitlearn className="text-orange-500" /> },
       { name: 'OpenCV', icon: <SiOpencv className="text-purple-500" /> },
+      { name: 'LangChain', icon: <SiLangchain className="text-blue-500" /> },
     ]
   },
 ];
